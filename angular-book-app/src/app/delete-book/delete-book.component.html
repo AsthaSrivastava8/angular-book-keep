@@ -1,0 +1,20 @@
+<h3>Book Id:</h3>
+<span class="p-input-icon-left">
+  <i class="pi pi-search"></i>
+  <input
+    type="text"
+    pInputText
+    placeholder="Delete Book"
+    [(ngModel)]="bookId"
+    (keyup)="updateDisabled()"
+  />
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-trash"
+    class="p-button-danger"
+    (click)="deleteBook()"
+    [disabled]="disabled"
+  ></button>
+</span>

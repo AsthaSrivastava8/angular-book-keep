@@ -1,0 +1,20 @@
+<h3>Book Id:</h3>
+<span class="p-input-icon-left">
+  <i class="pi pi-search"></i>
+  <input
+    type="text"
+    pInputText
+    placeholder="Find Book"
+    [(ngModel)]="bookId"
+    (keyup)="updateDisabled()"
+  />
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-check"
+    class="p-button-check"
+    (click)="findBook()"
+    [disabled]="disabled"
+  ></button>
+</span>
